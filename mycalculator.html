@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="icon" href="html5-icon-15.png" type="image/x-icon">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: rgb(240, 195, 202);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: palevioletred;
+    }
+
+    .wrapper {
+      background-color: white;
+      width: 350px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .display {
+      background-color: palevioletred;
+      color: white;
+      font-size: 30px;
+      height: 70px;
+      line-height: 70px;
+      text-align: right;
+      padding: 0 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .grid div {
+      background-color: palevioletred;
+      color: pink;
+      font-size: 25px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 10px;
+      user-select: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .grid div:hover {
+      background-color: #FF5C8A;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Calculator</h1>
+
+  <div class="wrapper">
+    <div class="display">0</div>
+
+    <div class="grid">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>+</div>
+
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>-</div>
+
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>*</div>
+
+      <div>0</div>
+      <div>c</div>
+      <div>/</div>
+      <div>=</div>
+    </div>
+  </div>
+
+</body>
+</html>
